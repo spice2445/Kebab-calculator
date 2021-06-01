@@ -17,7 +17,7 @@ inputPeople.oninput = () =>{
     let clas = inputPeople.classList[1]
     inputPeople.classList.remove(clas)
     inputPeople.classList.add(`men_${inputPeople.value}`)
-    men = inputPeople.value
+    men = +inputPeople.value
     restart()
 
 }
@@ -25,7 +25,7 @@ inputHungry.oninput = () =>{
     let clas = inputHungry.classList[1]
     inputHungry.classList.remove(clas)
     inputHungry.classList.add(`hungry_${inputHungry.value}`)
-    hungry = inputHungry.value * 100 - 100
+    hungry = +inputHungry.value * 100 - 100
     restart()
 
 }
@@ -47,7 +47,6 @@ for(let elem of questions){
     }
 }
 function restart(){
-    console.log(time)
-    number = (men*(meatWeight+ hungry+ time))/1000
+    number = (men*(+meatWeight+ +hungry+ +time))/1000
     result.innerHTML = `${number} КГ ${meatOpt}`.toUpperCase()
 }
