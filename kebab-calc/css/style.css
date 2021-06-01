@@ -1,0 +1,601 @@
+body{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.app{
+    max-width: 400px;
+}
+.title{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+h3, h2, .people-output{
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: -0.1px;
+    font-family: 'Roboto', sans-serif;
+}
+.people-input::-webkit-slider-runnable-track{
+    background:#a77e5e;
+    height: 4px;
+    border-radius: 3px;
+    
+}
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 0px;
+}
+.people-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.people-input,
+.hungry-input{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+  input[type=range]:focus {
+    outline: none;
+}
+.men_1::-webkit-slider-thumb {
+    height: 22px;
+    width: 22px;
+    background-color: transparent;
+    background: url("../assets/active/smile.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -10px;
+  }
+  .men_1::-moz-range-thumb {
+    height: 22px;
+    width: 22px;
+    background-color: transparent;
+    background: url("../assets/active/smile.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -10px;
+  }
+  .men_2::-webkit-slider-thumb {
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    background: url("../assets/active/smile-2.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -14px;
+  }
+  .men_2::-moz-range-thumb {
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    background: url("../assets/active/smile-2.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -14px;
+  }
+  .men_3::-webkit-slider-thumb {
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    background: url("../assets/active/smile-2.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -14px;
+  }
+  .men_3::-moz-range-thumb {
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    background: url("../assets/active/smile-2.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -14px;
+  }
+  .people-input::-moz-range-track {
+    background:#a77e5e;
+    height: 6px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  .men_4::-webkit-slider-thumb {
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    background: url("../assets/active/smile-2.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -14px;
+  }
+  .men_4::-moz-range-thumb {
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    background: url("../assets/active/smile-2.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -14px;
+  }
+  .men_5::-webkit-slider-thumb {
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    background: url("../assets/active/smile-2.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -14px;
+  }
+  .men_5::-moz-range-thumb {
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    background: url("../assets/active/smile-2.svg") center center no-repeat ;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -14px;
+  }
+  .men_6::-webkit-slider-thumb {
+    height: 38px;
+    width: 38px;
+    background-color: transparent;
+    background: url("../assets/active/smile-3.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -18px;
+  }
+  .men_6::-moz-range-thumb {
+    height: 38px;
+    width: 38px;
+    background-color: transparent;
+    background: url("../assets/active/smile-3.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -18px;
+  }
+  .men_7::-webkit-slider-thumb {
+    height: 38px;
+    width: 38px;
+    background-color: transparent;
+    background: url("../assets/active/smile-3.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -18px;
+  }
+  .men_7::-moz-range-thumb {
+    height: 38px;
+    width: 38px;
+    background-color: transparent;
+    background: url("../assets/active/smile-3.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -18px;
+  }
+  .men_8::-webkit-slider-thumb {
+    height: 38px;
+    width: 38px;
+    background-color: transparent;
+    background: url("../assets/active/smile-3.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -18px;
+  }
+  .men_8::-moz-range-thumb {
+    height: 38px;
+    width: 38px;
+    background-color: transparent;
+    background: url("../assets/active/smile-3.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -18px;
+  }
+  .men_9::-webkit-slider-thumb {
+    height: 38px;
+    width: 38px;
+    background-color: transparent;
+    background: url("../assets/active/smile-3.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -18px;
+  }
+  .men_9::-moz-range-thumb {
+    height: 38px;
+    width: 38px;
+    background-color: transparent;
+    background: url("../assets/active/smile-3.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -18px;
+  }
+  .men_10::-webkit-slider-thumb {
+    height: 46px;
+    width: 46px;
+    background-color: transparent;
+    background: url("../assets/active/smile-4.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -23px;
+  }
+  .men_10::-moz-range-thumb {
+    height: 46px;
+    width: 46px;
+    background-color: transparent;
+    background: url("../assets/active/smile-4.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -23px;
+  }
+  .men_11::-webkit-slider-thumb {
+    height: 46px;
+    width: 46px;
+    background-color: transparent;
+    background: url("../assets/active/smile-4.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -23px;
+  }
+  .men_11::-moz-range-thumb {
+    height: 46px;
+    width: 46px;
+    background-color: transparent;
+    background: url("../assets/active/smile-4.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -23px;
+  }
+  .men_12::-webkit-slider-thumb {
+    height: 46px;
+    width: 46px;
+    background-color: transparent;
+    background: url("../assets/active/smile-4.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -23px;
+  }
+  .men_12::-moz-range-thumb {
+    height: 46px;
+    width: 46px;
+    background-color: transparent;
+    background: url("../assets/active/smile-4.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -23px;
+  }
+  .men_13::-webkit-slider-thumb {
+    height: 46px;
+    width: 46px;
+    background-color: transparent;
+    background: url("../assets/active/smile-4.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -23px;
+  }
+  .men_13::-moz-range-thumb {
+    height: 46px;
+    width: 46px;
+    background-color: transparent;
+    background: url("../assets/active/smile-4.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -23px;
+  }
+  .men_14::-webkit-slider-thumb {
+    height: 46px;
+    width: 46px;
+    background-color: transparent;
+    background: url("../assets/active/smile-4.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -23px;
+  }
+  .men_14::-moz-range-thumb {
+    height: 46px;
+    width: 46px;
+    background-color: transparent;
+    background: url("../assets/active/smile-4.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -23px;
+  }
+  .men_15::-webkit-slider-thumb {
+    height: 46px;
+    width: 46px;
+    background-color: transparent;
+    background: url("../assets/active/smile-4.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -23px;
+  }
+  .men_15::-moz-range-thumb {
+    height: 46px;
+    width: 46px;
+    background-color: transparent;
+    background: url("../assets/active/smile-4.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -23px;
+  }
+  .men_16::-webkit-slider-thumb {
+    height: 54px;
+    width: 54px;
+    background-color: transparent;
+    background: url("../assets/active/smile-5.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -27px;
+  }
+  .men_16::-moz-range-thumb {
+    height: 54px;
+    width: 54px;
+    background-color: transparent;
+    background: url("../assets/active/smile-5.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -27px;
+  }
+  .men_17::-webkit-slider-thumb {
+    height: 54px;
+    width: 54px;
+    background-color: transparent;
+    background: url("../assets/active/smile-5.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -27px;
+  }
+  .men_17::-moz-range-thumb {
+    height: 54px;
+    width: 54px;
+    background-color: transparent;
+    background: url("../assets/active/smile-5.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -27px;
+  }
+  .men_18::-webkit-slider-thumb {
+    height: 54px;
+    width: 54px;
+    background-color: transparent;
+    background: url("../assets/active/smile-5.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -27px;
+  }
+  .men_18::-moz-range-thumb {
+    height: 54px;
+    width: 54px;
+    background-color: transparent;
+    background: url("../assets/active/smile-5.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -27px;
+  }
+  .men_19::-webkit-slider-thumb {
+    height: 54px;
+    width: 54px;
+    background-color: transparent;
+    background: url("../assets/active/smile-5.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -27px;
+  }
+  .men_19::-moz-range-thumb {
+    height: 54px;
+    width: 54px;
+    background-color: transparent;
+    background: url("../assets/active/smile-5.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -27px;
+  }
+  .men_20::-webkit-slider-thumb {
+    height: 54px;
+    width: 54px;
+    background-color: transparent;
+    background: url("../assets/active/smile-5.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -27px;
+  }
+  .men_20::-moz-range-thumb {
+    height: 54px;
+    width: 54px;
+    background-color: transparent;
+    background: url("../assets/active/smile-5.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -27px;
+  }
+  .meat-h3{
+    margin-bottom: 10px;
+  }
+  /* -------------------------------------------------- */
+  .hungry-input::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 13.5px;
+    cursor: pointer;
+    background: url("../assets/input.svg");
+  }
+  .hungry-input::-moz-range-track {
+    width: 100%;
+    height: 13.5px;
+    cursor: pointer;
+    background: url("../assets/input.svg");
+  }
+  .hungry-input::-moz-range-track {
+    background:#a77e5e;
+    height: 4px;
+    border-radius: 3px;
+  }
+  .hungry_1::-moz-range-thumb {
+    height: 50px;
+    width: 50px;
+    border-radius: 3px;
+    background-color: transparent;
+    background: url("../assets/hamster.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -4px;
+  }
+  .hungry_1::-webkit-slider-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 3px;
+    background-color: transparent;
+    background: url("../assets/hamster.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -4px;
+  }
+  .hungry_2::-moz-range-thumb {
+    height: 30px;
+    width: 30px;
+    border-radius: 3px;
+    background-color: transparent;
+    background: url("../assets/wolf.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7px;
+  }
+  .hungry_2::-webkit-slider-thumb {
+    height: 30px;
+    width: 30px;
+    border-radius: 3px;
+    background-color: transparent;
+    background: url("../assets/wolf.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7px;
+  }
+  .hungry_3::-moz-range-thumb {
+    height: 40px;
+    width: 40px;
+    border-radius: 3px;
+    background-color: transparent;
+    background: url("../assets/dragon.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -17px;
+  }
+  .hungry_3::-webkit-slider-thumb {
+    height: 40px;
+    width: 40px;
+    border-radius: 3px;
+    background-color: transparent;
+    background: url("../assets/dragon.svg") center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -17px;
+  }
+
+img{
+    width: 64px;
+    height: 64px;
+    filter: grayscale(1) blur(1px);
+    transition: 0.3s;
+}
+.active{
+    filter: grayscale(0) blur(0px);
+}
+img:hover{
+    filter: grayscale(0) blur(0px);
+}
+.meat-list{
+    display: flex;
+    justify-content: space-around;
+}
+.questions-h4::before {
+  width: 18px;
+  cursor: pointer;
+  padding-top: 2px;
+  padding-left: 2px;
+  height: 20px;
+  border-radius: 100%;
+  background: burlywood;
+  content: "";
+  display: inline-block;
+  margin-top: 8px;
+  margin-right: 4px;
+  margin-bottom: -6px;
+  border: solid 1px gray;
+}
+.questions-h4{
+  cursor: pointer;
+  color: gray;
+  transition: 0.5s;
+}
+.questions-active{
+  color: black;
+}
+.questions-active::before {
+  width: 18px;
+  padding-top: 2px;
+  padding-left: 2px;
+  height: 20px;
+  border-radius: 100%;
+  background: burlywood;
+  content: url("../assets/active/fire.png");
+  display: inline-block;
+  margin-top: 8px;
+  margin-right: 4px;
+  margin-bottom: -17px;
+}
+.result-h4{
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -0.1px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 10px;
+}
+.result{
+  margin-top: 5px;
+  width: 95%;
+  height: 55px;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background: #FFFAF3;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0px 1.07603px 8.60824px rgba(255, 255, 255, 0.25), inset 0px 1.07603px 2.15206px rgba(0, 0, 0, 0.25);
+}
+@media  (max-width: 440px) {
+  .app {
+    padding-left: 14px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 340px){
+  .people{
+    padding-right: 5px;
+    padding-left: 2px;
+  }
+  .meat{
+    padding-left: 1px;
+  }
+  .hungry {
+    padding-left: 3px;
+    padding-right: 10px;
+  }
+  .questions{
+    padding-left: 4px;
+  }
+  .result-h4 {
+    padding-left: 4px;
+  }
+  .result{
+    width: 90%;
+    margin-left: 5px;
+  }
+  .questions-h4{
+    font-size: 14px;
+  }
+}
