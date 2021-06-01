@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebab calc</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app">
+        <h1 class="title">Шашлычный калькулятор</h1>
+        <div class="people">
+            <div class="people-container">
+                <h3 class="people-h3">1. Сколько вас?</h3>
+                <output class="people-output" name="people-output">10</output>
+            </div>
+            <input min="1" max="20" value="10" type="range" class="people-input men_10">
+        </div>
+        <div class="meat">
+            <h3 class="meat-h3">2. Какое мясо жарим?</h3>
+            <ul class="meat-list">
+                <li>
+                    <img data-meat="курятины" data-weight="300" class="animals" src="assets/hen.svg" alt="meat-item">
+                </li>
+
+                <li>
+                    <img data-meat="свинины" data-weight="300" class="animals" src="assets/pork.svg" alt="meat-item">
+                </li>
+
+                <li>
+                    <img data-meat="баранины" data-weight="300" class="animals active" src="assets/sheep.svg" alt="meat-item">
+                </li>
+
+                <li>
+                    <img data-meat="говядины" data-weight="300" class="animals" src="assets/cow.svg" alt="meat-item">
+                </li>
+
+                <li>
+                    <img data-meat="растительного мяса" data-weight="400" class="animals" src="assets/broccoli.svg" alt="meat-item">
+                </li>
+            </ul>
+        </div>
+        <div class="hungry">
+            <h3 class="hungry-h3">3. Насколько вы голодны?</h3>
+            <input  value="2" min="1" max="3" type="range" class="hungry-input hungry_2">
+        </div>
+        <div class="questions">
+            <h2 class="questions-h2">4. Как долго планируем балдеть?</h2>
+            <h4 class="questions-h4 questions-active" data-time="0">Мы быстро - по шашлычки и домой!</h4>
+            <h4 class="questions-h4" data-time="100">Нормально посидим! И так редко собираемся</h4>
+            <h4 class="questions-h4" data-time="200">Пока мангал не развалится!</h4>
+        </div>
+        <h4 class="result-h4">Ваш рецепт шашлычного балдежа:</h4>
+        <div class="result">4 КГ БАРАНИНЫ</div>
+
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
